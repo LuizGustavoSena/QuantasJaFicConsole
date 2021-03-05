@@ -1,0 +1,6 @@
+C:\Users\Luiz Sena\source\repos\LuizGustavoSena\QuantasJafiz\QuantasJafiz\Model\bin\Debug\Model.dll
+C:\Users\Luiz Sena\source\repos\LuizGustavoSena\QuantasJafiz\QuantasJafiz\Model\bin\Debug\Model.pdb
+C:\Users\Luiz Sena\source\repos\LuizGustavoSena\QuantasJafiz\QuantasJafiz\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\Luiz Sena\source\repos\LuizGustavoSena\QuantasJafiz\QuantasJafiz\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Sena\source\repos\LuizGustavoSena\QuantasJafiz\QuantasJafiz\Model\obj\Debug\Model.dll
+C:\Users\Luiz Sena\source\repos\LuizGustavoSena\QuantasJafiz\QuantasJafiz\Model\obj\Debug\Model.pdb

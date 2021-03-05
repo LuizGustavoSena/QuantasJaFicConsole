@@ -4,6 +4,7 @@ using System.Linq;
 using Model;
 using System.Text;
 using System.Threading.Tasks;
+using Controller;
 
 namespace QuantasJafiz
 {
@@ -13,11 +14,32 @@ namespace QuantasJafiz
         {
             QuantasJaFiz quantasJaFiz;
             List<QuantasJaFiz> lista = new List<QuantasJaFiz>();
-
+            byte op;
             do
             {
+                op = Menu();
 
-            } while (true);
+                Console.Clear();
+
+                switch (op)
+                {
+                    case 1: // INSERIR ENTREGA 
+
+                        lista.Add(lerEntrega());
+
+                        File.Write(lista);
+
+                        break;
+                    case 2: // IMPRIMIR ENTREGAS
+                        Console.WriteLine("Valor\t|Descrição \t|Pago");
+                        lista.ForEach(x => Console.WriteLine(x.ToString()));
+                        break;
+                    case 3: // EDITAR ENTREGA
+                        break;
+                }
+                
+
+            } while (op != 0);
         }
 
         static byte Menu()
@@ -47,8 +69,13 @@ namespace QuantasJafiz
             Console.Write("Qual o valor: ");
             valor = Console.ReadLine();
 
-            Console.Write("Qual a descrição: ");
-            descricao = Console.ReadLine();
+            do
+            {
+                Console.Write("Qual a descrição (Campo Máximo 15 Caracteres: ");
+                descricao = Console.ReadLine();
+            } while (descricao.Length > 15);
+
+            descricao = descricao.PadRight(15, ' ');
 
             Console.Write(@"Está paga 1 - Sim \ 0 - Não: ");
             pago = Console.ReadLine();
